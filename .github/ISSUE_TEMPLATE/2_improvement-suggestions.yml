@@ -1,0 +1,22 @@
+name: Improvement Suggestion
+description: "Suggest ways to improve, expand, or add to our content."
+labels: ["improvement"]
+body:
+  - type: checkboxes
+    id: employee
+    attributes:
+      label: Temporal Affiliation
+      options:
+        - label: I am a Temporal employee
+          required: false
+  - type: textarea
+    id: issue-location
+    attributes:
+      label: Content Issue
+      description: Please specify how you envision us improving, expanding, or adding to our content.
+      placeholder: "URL, header, issue, suggested correction"
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: "Thanks for helping us improve our documentation."

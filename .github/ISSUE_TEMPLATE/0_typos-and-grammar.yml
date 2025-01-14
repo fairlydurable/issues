@@ -1,0 +1,30 @@
+name: Typos and Grammar
+description: Report typos, spelling mistakes, or grammar problems.
+labels: ["copy-editing"]
+body:
+  - type: checkboxes
+    id: employee
+    attributes:
+      label: Temporal Affiliation
+      options:
+        - label: I am a Temporal employee
+          required: false
+  - type: input
+    id: issue-url
+    attributes:
+      label: Page URL
+      description: The page where the problem occurs
+      placeholder: "For example, https://docs.temporal.io/..."
+    validations:
+      required: true
+  - type: textarea
+    id: issue-location
+    attributes:
+      label: Typo and Grammar issue
+      description: Please specify the approximate location on the page (under which heading), the incorrect element and, if possible, a suggested fix.
+      placeholder: "URL, header, issue, suggested correction"
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: "Thanks for helping us improve our documentation."

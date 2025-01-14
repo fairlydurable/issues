@@ -1,0 +1,22 @@
+name: Accessibility Issue
+description: Report accessibility issues such as color contrast, font readability, missing image descriptions, or screen reader problems.
+labels: ["accessibility"]
+body:
+  - type: checkboxes
+    id: employee
+    attributes:
+      label: Temporal Affiliation
+      options:
+        - label: I am a Temporal employee
+          required: false
+  - type: textarea
+    id: issue-location
+    attributes:
+      label: Content Issue
+      description: What kind of Accessibility issue did you encounter? For example, poor color contrast, unreadable fonts, missing alt text for images, etc. If possible, please provide suggestions for a better Accessibility experience.
+      placeholder: "URL, issue, suggested correction"
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: "Thanks for helping us improve our documentation."
