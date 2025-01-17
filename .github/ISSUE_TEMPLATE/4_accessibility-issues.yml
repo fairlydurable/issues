@@ -1,5 +1,5 @@
 name: Accessibility Issue
-description: Report accessibility issues such as color contrast, font readability, missing image descriptions, or screen reader problems.
+description: Report accessibility issues like color contrast, font readability, missing image descriptions, or screen reader problems.
 labels: ["accessibility"]
 body:
   - type: checkboxes
@@ -9,12 +9,20 @@ body:
       options:
         - label: I am a Temporal employee
           required: false
+  - type: input
+    id: issue-url
+    attributes:
+      label: Page URL
+      description: The page where the problem occurs
+      placeholder: "For example, https://docs.temporal.io/..."
+    validations:
+      required: true
   - type: textarea
     id: issue-location
     attributes:
-      label: Content Issue
-      description: What kind of Accessibility issue did you encounter? For example, poor color contrast, unreadable fonts, missing alt text for images, etc. If possible, please provide suggestions for a better Accessibility experience.
-      placeholder: "URL, issue, suggested correction"
+      label: Accessibility Issue
+      description: Report issues related to accessibility, such as color contrast, font readability, missing image descriptions, or screen reader problems here. Describe the accessibility issue you encountered and suggest a solution. Specify an approximate location on the page (for example, under which heading or part of the content), and any other details that will help us locate and resolve the problem. If possible, suggest improvements for a better accessibility experience.
+      placeholder: "Section title, issue, suggested correction"
     validations:
       required: true
   - type: markdown

@@ -21,8 +21,8 @@ body:
     id: issue-location
     attributes:
       label: Content Issue
-      description: Please specify the approximate location on the page (under which heading) where missing or incorrect information and unclear, confusing, or misleading writing occurs. Please describe the issue and, if possible, a suggested fix. We appreciate links to any reference or authoritative material or experts that backs up factual changes.
-      placeholder: "URL, header, issue, suggested correction"
+      description: Report unclear, confusing, or misleading writing, or missing/incorrect information in the documentation here. Describe the content issue you encountered and your recommended solution. Specify the approximate location on the page (for example, under which heading or part of the content), and any other details that will help us locate and resolve the problem. We appreciate links to any reference material or experts that support factual changes.
+      placeholder: "Section title, issue, suggested correction"
     validations:
       required: true
   - type: markdown

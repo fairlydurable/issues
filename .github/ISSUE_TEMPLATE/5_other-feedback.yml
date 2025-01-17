@@ -12,7 +12,8 @@ body:
   - type: textarea
     id: feedback
     attributes:
-      label: What did you like or find helpful about our site? What suggestions do you have making our documentation even better?
+      label: General Feedback
+      description: Share feedback or broad suggestions for improving the documentation here. What did you like or find helpful about our site? What suggestions do you have for making our documentation better?
       placeholder: Let us know what you think!
     validations:
       required: true

@@ -12,9 +12,9 @@ body:
   - type: textarea
     id: issue-location
     attributes:
-      label: Content Issue
-      description: Please specify how you envision us improving, expanding, or adding to our content.
-      placeholder: "URL, header, issue, suggested correction"
+      label: Content Suggestion
+      description: Suggest ways to improve, add, or reorganize our content to make it clearer, better structured, and more discoverable. Please specify how you think we can improve, expand, or add to our content.
+      placeholder: "Help us improve"
     validations:
       required: true
   - type: markdown

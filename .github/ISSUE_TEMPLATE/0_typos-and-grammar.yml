@@ -1,5 +1,5 @@
 name: Typos and Grammar
-description: Report typos, spelling mistakes, or grammar problems.
+description: Report typos, spelling mistakes, or grammar issues.
 labels: ["copy-editing"]
 body:
   - type: checkboxes
@@ -13,16 +13,16 @@ body:
     id: issue-url
     attributes:
       label: Page URL
-      description: The page where the problem occurs
+      description: The page where the issue occurs
       placeholder: "For example, https://docs.temporal.io/..."
     validations:
       required: true
   - type: textarea
     id: issue-location
     attributes:
-      label: Typo and Grammar issue
-      description: Please specify the approximate location on the page (under which heading), the incorrect element and, if possible, a suggested fix.
-      placeholder: "URL, header, issue, suggested correction"
+      label: Typo or Grammar Issue
+      description: Report typos, spelling mistakes, or grammar problems here. Describe the problem and your recommended solution. Specify an approximate location on the page (for example, under which heading or part of the content), and any other details that will help us locate and resolve the problem.
+      placeholder: "Section title, issue, suggested correction"
     validations:
       required: true
   - type: markdown
